@@ -33,7 +33,7 @@ export default function Ori() {
     event.preventDefault();
     tone();
   };
-
+//git remote set-url origin
   if (isLoadin === "error") {
     return (
       <div className="containerr">
