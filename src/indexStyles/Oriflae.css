@@ -280,21 +280,21 @@ section .small {
   rotate: 270deg;
 }
 
-.Caro {
+.Cairo {
   display: flex;
   justify-content: center;
   margin-top: 16em;
   width: 100%;
   overflow: hidden;
 }
-.Caro .box {
+.Cairo .box {
   width: 100%;
   padding: 1em;
   border: 3px whitesmoke solid;
   display: flex;
   justify-content: center;
 }
-.Caro .box span {
+.Cairo .box span {
   display: block;
 }
 
