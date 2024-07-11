@@ -7,7 +7,6 @@ import {
 
 import { AnimatePresence } from "framer-motion";
 
-import Ori from "./pages/Other";
 import Home from "./pages/Home";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/ho" element={<Home />}></Route>
       </Routes>
     </AnimatePresence>
   );
