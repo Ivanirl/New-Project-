@@ -20,7 +20,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(165, 87, 42);
+  //background: rgb(165, 87, 42);
   font-weight: 300;
   scroll-behavior: smooth;
   transition: ease 0.2s;
@@ -51,7 +51,7 @@ a {
 
 section {
   padding: 4em;
-  margin-top: 2em;
+  padding-top: 6em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,7 @@ section {
 }
 
 .boot{
-  color: rgb(165, 87, 42);
+  color: wheat;
   font-weight: 100;
   border-radius: 2em;
   padding: 1em 2em;
@@ -92,6 +92,7 @@ section {
   box-shadow: 2px 2px 5px #000;
   justify-self: center;
   cursor: pointer;
+  background-color: transparent;
 
   &:focus{
     border: none;
@@ -112,5 +113,9 @@ section {
 }
 
 .A{
-  background: yellow;
+  background: rgb(61, 61, 252);
+}
+
+.B{
+  background-color: rgb(165, 87, 42);
 }
