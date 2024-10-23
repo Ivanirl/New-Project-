@@ -5,7 +5,7 @@ import One from "../Applications/One";
 
 export default function Home() {
   const bro = useNavigate();
-  const [ment, setMent] = useState();
+  const [ment, setMent] = useState("Homey B");
   const [start, started] = useState(false);
 
   const taps = () => {
@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <div className="Homey">
+    <div className={ment ? "Homey A" : "Homey B"}>
       <section className="FirstAvenger">
         <div className="con">
           <h1 className={start ? "" : "reggie"}>
