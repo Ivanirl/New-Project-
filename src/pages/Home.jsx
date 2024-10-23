@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import One from "../Applications/One";
-import Two from "../Applications/Two";
 
 export default function Home() {
   const bro = useNavigate();
@@ -26,7 +25,6 @@ export default function Home() {
           </h1>
         </div>
         <One start={start} />
-        <Two />
       </section>
       <div className="wrapper">
         <button className="boot" onClick={taps}>
