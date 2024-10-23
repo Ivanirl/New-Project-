@@ -1,26 +1,33 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import poop from "../Resources/AIQT4810.JPG"
-import poop2 from "../Resources/EXYS3788.JPG"
+import One from "../Applications/One";
+import Two from "../Applications/Two";
 
 export default function Home() {
   
   const bro = useNavigate();
   const [menuha, setMenuha] = useState(false)
+  const [start, started] = useState(false);
 
+
+  const taps = ()=>{
+    started(!start) 
+  }
 
   return (
     <div className="Homey">
 
       <section className="FirstAvenger">
         <div className="con">
-          <h1>
-            Welcome<br></br> to your nightmare
+          <h1 className={start? "" : "reggie"}>
+            The main<br></br> Attraction <br></br> is here!
           </h1>
-          <span className="top">Hahahahaha</span>
         </div>
+        <One start = {start}/>
+        <Two/>
       </section>
+      <button className="boot" onClick={taps}>Click Me</button>
     </div>
   );
 }

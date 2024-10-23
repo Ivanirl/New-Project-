@@ -19,7 +19,7 @@ p {
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background: rgb(233, 81, 26);
+  background: rgb(165, 87, 42);
   font-weight: 300;
   scroll-behavior: smooth;
   transition: ease 0.2s;
@@ -48,10 +48,19 @@ a {
   font-weight: 300;
 }
 
-
-section{
+section {
   padding: 4em;
-  margin-top: 6em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  text-align: center;
+  justify-content: center;
+
+  .con {
+    margin-bottom: 3em;
+  }
 
   h1 {
     font-size: 6em;
@@ -66,4 +75,28 @@ section{
     font-size: 2em;
     color: whitesmoke;
   }
+
+  .reggie{
+    letter-spacing: 10px;
+  }
+}
+
+.boot{
+  color: rgb(165, 87, 42);
+  font-weight: 100;
+  border-radius: 2em;
+  padding: 1em 2em;
+  font-size: 1.1em;
+  border: none;
+  box-shadow: 2px 2px 5px #000;
+  justify-self: center;
+  cursor: pointer;
+
+  &:focus{
+    border: none;
+  }
+}
+
+.Homey{
+  text-align: center;
 }
