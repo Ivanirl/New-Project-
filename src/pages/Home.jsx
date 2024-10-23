@@ -14,7 +14,7 @@ export default function Home() {
 
   const ping = () =>{
     setInterval(() => {
-      started(!start);
+      
     }, 4000);
   }
 
