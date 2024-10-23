@@ -96,6 +96,7 @@ section .reggie {
 
 .Homey {
   text-align: center;
+  padding-bottom: 10.6em;
 }
 .Homey .wrapper {
   display: flex;

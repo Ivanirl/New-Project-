@@ -12,6 +12,14 @@ export default function Home() {
     started(!start);
   };
 
+  const ping = () =>{
+    setInterval(() => {
+      started(!start);
+    }, 4000);
+  }
+
+  ping()
+
   const bingo = () => {
     setMent(!ment)
   };
