@@ -5,7 +5,7 @@ import One from "../Applications/One";
 
 export default function Home() {
   const bro = useNavigate();
-  const [ment, setMent] = useState("Homey B");
+  const [ment, setMent] = useState(true);
   const [start, started] = useState(false);
 
   const taps = () => {
@@ -13,7 +13,7 @@ export default function Home() {
   };
 
   const bingo = () => {
-    setMent("");
+    setMent(!ment)
   };
 
   return (
@@ -30,7 +30,9 @@ export default function Home() {
         <button className="boot" onClick={taps}>
           Spacer
         </button>
-        <button className="boot" onClick={bingo}>Toggler</button>
+        <button className="boot" onClick={bingo}>
+          Toggler
+        </button>
       </div>
     </div>
   );
