@@ -95,8 +95,17 @@ section {
   &:focus{
     border: none;
   }
+  &:active{
+    background: #000;
+  }
 }
 
 .Homey{
   text-align: center;
+
+  .wrapper{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
 }

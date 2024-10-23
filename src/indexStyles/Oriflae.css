@@ -89,7 +89,15 @@ section .reggie {
 .boot:focus {
   border: none;
 }
+.boot:active {
+  background: #000;
+}
 
 .Homey {
   text-align: center;
+}
+.Homey .wrapper {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
 }/*# sourceMappingURL=Oriflae.css.map */
