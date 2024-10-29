@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import api from "../API/Post";
 
 import One from "../Applications/One";
 
@@ -8,6 +9,7 @@ export default function Home() {
   const [ment, setMent] = useState(true);
   const [start, started] = useState(false);
   const [posts, setPosts] = useState([]); 
+
 
   const taps = () => {
     started(!start);
@@ -28,8 +30,8 @@ export default function Home() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-
-      } catch (err){
+          const response = await api.get("./post")
+        } catch (err){
 
       }
     }
