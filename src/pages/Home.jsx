@@ -7,6 +7,7 @@ export default function Home() {
   const bro = useNavigate();
   const [ment, setMent] = useState(true);
   const [start, started] = useState(false);
+  const [posts, setPosts] = useState([]); 
 
   const taps = () => {
     started(!start);
@@ -23,6 +24,16 @@ export default function Home() {
   const bingo = () => {
     setMent(!ment)
   };
+
+  useEffect(()=>{
+    const fetchData = async () => {
+      try {
+
+      } catch (err){
+
+      }
+    }
+  }, [])
 
   return (
     <div className={ment ? "Homey A" : "Homey B"}>
