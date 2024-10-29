@@ -30,9 +30,9 @@ export default function Home() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-          const response = await api.get("./post")
+          const response = await api.get("/point")
           setPosts(response.data) 
-          console.log(`poop`)
+          console.log(posts)
         } catch (err){
           if(err.response){
             console.log(err.response.data)
@@ -64,6 +64,14 @@ export default function Home() {
         <button className="boot" onClick={bingo}>
           Toggler
         </button>
+      </div>
+      <div className="Homey">
+        <h1 className="">
+          {posts[0].title}
+        </h1>
+        <span>
+          {posts[0].description}
+        </span>
       </div>
     </div>
   );
