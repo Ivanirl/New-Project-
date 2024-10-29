@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import One from "../Applications/One";
 
@@ -14,7 +14,7 @@ export default function Home() {
 
   const ping = () =>{
     setInterval(() => {
-      
+      //no function yet
     }, 4000);
   }
 
